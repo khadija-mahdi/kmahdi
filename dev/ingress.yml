@@ -4,6 +4,7 @@ metadata:
   name: app-ingress
   annotations:
     nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
+    link.argocd.argoproj.io/external-link: "http://app1.com:8080"
 spec:
   ingressClassName: nginx
   rules:
